@@ -1,5 +1,6 @@
 #include <cstdint>
 #include <cstring>
+#include <cstdio>
 
 #ifdef _MSC_VER
 #include <intrin.h>
@@ -107,5 +108,6 @@ void detect_sse41()
 int main()
 {
 	detect_sse41();
-	return g_cpu_supports_sse41 ? 13 : 42;
+	printf(g_cpu_supports_sse41 ? "supported\n" : "unsupported\n");
+	return 0;
 }
