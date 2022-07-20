@@ -11,3 +11,6 @@ RelWithDebInfo configuration is affected only.
 Possible workaround is to make the function `extract_x86_extended_flags` _inline_
 
 To see all the test-cases go to the github actions page. The code is compiled and tested in multiple scenarios.
+
+The issue has been reported to llvm: https://github.com/llvm/llvm-project/issues/56626
+
