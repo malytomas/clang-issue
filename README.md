@@ -9,3 +9,5 @@ Clang generates code that leads to segfault at runtine.
 RelWithDebInfo configuration is affected only.
 
 Possible workaround is to make the function `extract_x86_extended_flags` _inline_
+
+To see all the test-cases go to the github actions page. The code is compiled and tested in multiple scenarios.
