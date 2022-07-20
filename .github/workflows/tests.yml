@@ -63,12 +63,10 @@ jobs:
           }
 
     steps:
-    - name: Versions
+    - name: Install packages
       run: |
-        cmake --version
-        ${{ matrix.compiler.cc }} --version
-        ${{ matrix.compiler.cxx }} --version
-        git --version
+        sudo apt-get update
+        sudo apt-get install -y ${{ matrix.compiler.install }}
 
     - uses: actions/checkout@v2
 
